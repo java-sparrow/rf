@@ -29,8 +29,9 @@ define(function () {
          * @public
          *
          * @param {string} text 提示文本
-         * @param {boolean} mask 是否遮罩整个页面可视区域 防止用户操作
-         * @param {number} timeout 自动消失的时间间隔 如果不设置则需要通过调用hideNotice来关闭浮层
+         * @param {Object} options 配置参数
+         * @param {boolean} options.mask 是否遮罩整个页面可视区域 防止用户操作
+         * @param {number} options.timeout 自动消失的时间间隔 如果不设置则需要通过调用hideNotice来关闭浮层
          */
         notify: function (text, options) {
             var x = page.getScrollLeft() + page.getViewWidth() / 2;
