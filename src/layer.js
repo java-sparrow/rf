@@ -65,7 +65,7 @@ define(function () {
             if (options.timeout) {
                 noticeTimer = setTimeout(function () {
                     main.hideNotice();
-                }, timeout);
+                }, options.timeout);
             }
             return true;
         },
